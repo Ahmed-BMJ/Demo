@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<style>
+		body {
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			height: 100vh;
+			margin: 0px;
+		}
+		form {
+			width: 300px;
+			padding: 20px;
+			border:  2px solid #7b6b6b;
+			border-radius: 8px;
+			box-shadow: rgb(206, 146, 72);
+        }
+		
+		input, select {
+			width: 100%;
+			padding: 8px;		
+			margin-bottom: 16px;
+			box-sizing: border-box;
+		}
+		.tut6:hover{
+			color: aquamarine;
+		}
+
+	</style>
+</head>
+<body>
+	<form>
+   <label for="name">Name;</label>
+   <input type="text" name="name" id="name" placeholder="Name">
+<label for="Father's Name;">Father Name;</label>
+   <input type="text" name="Father's Name" id="Father's Name" placeholder="Father Name">
+ <label for="age">Age;</label>
+   <input type="number" name="age" id="age" placeholder="Age">
+ <label for="email">Email;</label>
+   <input type="text" name="email" id="email" placeholder="Email">
+ <label for="password">Password:</label>
+   <input type="password" placeholder="Password">
+<label for="gender">Gender;</label>
+   <select name="gender" id="gender">
+	<option value="Male">Male</option>
+		<option value="female">Female</option>
+			<option value="Other">Other</option>
+   </select>
+    <label for="address">Address:</label>
+   <textarea name="address" id="address"  cols="30" rows="3"></textarea>
+ <button class="tut6" type="submit">Submit</button></form>
+</body>
+</html>
